@@ -41,6 +41,8 @@ public class CompositeRunner implements CommandLineRunner {
         System.out.println("The number of pages of the book is: " + book.getPagesNumber());
         System.out.println();
 
+        System.out.println("GIT TEST BRANCH");
+
     }
 
 
