@@ -1,8 +1,8 @@
 package wendydeluca.u5d12.esercizio1;
 
 public interface DataSource {
- public String getNomeCompleto();
+ public String getFullName();
 
- public int getEtà();
+ public int getAge();
 
 }

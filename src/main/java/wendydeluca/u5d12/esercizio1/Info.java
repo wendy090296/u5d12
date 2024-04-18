@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 @Getter
 @Setter
-@AllArgsConstructor
 public class Info {
-    private String nome;
-    private String cognome;
-    private Date dataDiNascita;
+    private String name;
+    private String surname;
+    private LocalDate birthDate;
 
 
 }

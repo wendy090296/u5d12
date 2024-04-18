@@ -11,17 +11,16 @@ public class Adapter implements DataSource{
        this.info=info;
     }
 
+
+
+
     @Override
-    public String getNomeCompleto() {
-        return this.info.getNome() + "  " + this.info.getCognome();
+    public String getFullName() {
+        return info.getName() + "  " + info.getSurname();
     }
 
     @Override
-    public int getEtà() {
-        LocalDate localDate = this.info.getDataDiNascita().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        return LocalDate.now().getYear() - localDate.getYear();
+    public int getAge() {
+        return LocalDate.now().getYear() - info.getBirthDate().getYear();
     }
-
-
-
 }
